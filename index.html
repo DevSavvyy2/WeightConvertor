@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Convertor</title>
+    <style>
+        body{
+            background-color: rgba(3, 3, 29, 0.8);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20em;
+        }
+        .convertor {
+            background-color: rgba(77, 77, 163, 0.8);
+            background: linear-gradient(to right, rgb(209, 176, 182), rgb(152, 152, 152));
+            padding: 5em;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgb(170, 170, 170);
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="convertor">
+       <h1>Weight Convertor</h1>
+       <label for="kg">KG:</label>
+       <input type="number" id="weightkg" placeholder="Enter your weight in Kg">
+       <button id="calc" onclick="displayWeight()">Enter</button>
+       <p id="weightlbs"></p>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
